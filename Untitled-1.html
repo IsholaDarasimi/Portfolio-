@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ishola Darasimi Emmanuel — Tech Instructor & Web Dev</title>
+  <meta name="description" content="Ishola - Cisco instructor, web developer, digital skills trainer. Teaches HTML, digital awareness, video editing. Registered 150+ students on Cisco NetAcad." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ====== STICKY NAV ====== -->
+  <header class="site-header" role="banner">
+    <div class="nav container">
+      <div class="brand">
+        <div class="logo">ID</div>
+        <div class="brand-text">
+          <div class="name">Ishola Darasimi</div>
+          <div class="tag">Tech Instructor • Web Developer</div>
+        </div>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#courses">Courses</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn ghost" title="Toggle theme accent">Glow</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Spacer so content isn't hidden behind sticky header -->
+  <div class="header-spacer" aria-hidden="true"></div>
+
+  <main>
+
+    <!-- ====== HERO ====== -->
+    <section id="home" class="hero container fade-up">
+      <div class="hero-left">
+        <h1>Ishola Darasimi — Tech Instructor & Web Developer</h1>
+        <p class="lead">
+          I teach practical digital skills that get students building — HTML, digital awareness, video editing — and I register learners on Cisco Networking Academy. I combine teaching, product-focused projects, and real outcomes to help students build portfolios and entry-level skills.
+        </p>
+
+        <div class="hero-ctas">
+          <button class="btn primary" id="exploreBtn">Explore Courses</button>
+          <button class="btn ghost" onclick="scrollToSection('contact')">Book a Workshop</button>
+        </div>
+
+        <div class="quick-stats">
+          <div class="stat">
+            <div class="stat-value">150+</div>
+            <div class="stat-label">Students Registered</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">3</div>
+            <div class="stat-label">Partner Schools</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">5+</div>
+            <div class="stat-label">Courses Taught</div>
+          </div>
+        </div>
+
+        <div class="hero-note">
+          <small><strong>Pro tip:</strong> Press <kbd>E</kbd> to jump directly to Courses.</small>
+        </div>
+      </div>
+
+      <aside class="hero-right card">
+        <!-- profile placeholder -->
+        <div class="profile-wrap">
+          <img src="images/profile.jpg" alt="Ishola Darasimi profile" class="profile-img" />
+          <h3>Ishola Darasimi Emmanuel</h3>
+          <p class="muted">ND Computer Science — Yaba College of Technology</p>
+        </div>
+
+        <div class="mini-about">
+          <h4>What I do</h4>
+          <ul>
+            <li>Teach beginner-friendly web dev and digital skills</li>
+            <li>Onboard students to Cisco NetAcad and manage accounts</li>
+            <li>Design project-based lessons that build portfolios</li>
+          </ul>
+        </div>
+
+        <div class="contact-mini">
+          <button class="btn primary" onclick="scrollToSection('contact')">Contact / Enroll</button>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ====== ABOUT (expanded) ====== -->
+    <section id="about" class="container section fade-up">
+      <h2>About Me</h2>
+      <div class="split-grid">
+        <div>
+          <p>
+            I'm a hands-on tech instructor and web developer. I started as a learner and turned my curiosity into a teaching career — working with Landmark ICT Services and teaching in Grace School (Gbagada), Cedars School, and Command School (Bonny Cantonment).
+          </p>
+
+          <p>
+            My teaching philosophy: <em>projects over theory</em>. Students should leave each class with something they can show — a page, a video, or a working concept. I focus on clarity, repeatable workflows, and building practical skills quickly.
+          </p>
+
+          <h3>Core values</h3>
+          <ul>
+            <li>Practical learning — each session ends with a deliverable</li>
+            <li>Patience & clarity — concepts explained step-by-step</li>
+            <li>Accessibility — tech made simple for all students</li>
+          </ul>
+
+        </div>
+
+        <div>
+          <h3>Current focus</h3>
+          <p>I’m deepening web dev skills (HTML/CSS/JS), learning more about automation & DevNet, and supporting students through Cisco NetAcad enrollment and progress tracking.</p>
+
+          <h3>SIWES Experience</h3>
+          <p>During SIWES at Digital World Tech Academy I taught ICT basics, set up student databases, produced ID cards and helped teachers use digital tools — all practical tasks that improved school workflows.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== COURSES (detailed) ====== -->
+    <section id="courses" class="container section fade-up">
+      <h2>Courses & Workshops</h2>
+      <p class="section-lead">Each course is project-based. I run short workshops or multi-week classes depending on school needs.</p>
+
+      <div class="courses-grid">
+        <article class="course card">
+          <h3>HTML Essentials — Build a Live Website</h3>
+          <p>
+            Description: Start with HTML structure, elements, forms, accessibility basics, then add CSS layout. Students build a multi-page mini-site they can host or zip and submit.
+          </p>
+          <ul>
+            <li>Duration: 4–6 lessons (1–1.5 hrs each)</li>
+            <li>Outcome: 4-page mini-site with contact form and gallery</li>
+            <li>Skills: semantic HTML, basic accessibility, responsive layout</li>
+          </ul>
+          <div class="course-footer">
+            <button class="btn ghost" onclick="openCourseModal('HTML Essentials')">View Syllabus</button>
+            <button class="btn primary" onclick="enroll('HTML Essentials')">Enroll Class</button>
+          </div>
+        </article>
+
+        <article class="course card">
+          <h3>Digital Awareness & Online Safety</h3>
+          <p>
+            Description: Age-adjusted sessions on privacy, safe social media, phishing awareness, and responsible internet use. Includes parent-facing checklist for at-home safety.
+          </p>
+          <ul>
+            <li>Duration: 2–3 lessons</li>
+            <li>Outcome: Student checklist & teacher brief</li>
+            <li>Skills: account safety, privacy settings, cyber hygiene</li>
+          </ul>
+          <div class="course-footer">
+            <button class="btn ghost" onclick="openCourseModal('Digital Awareness')">View Syllabus</button>
+            <button class="btn primary" onclick="enroll('Digital Awareness')">Book Workshop</button>
+          </div>
+        </article>
+
+        <article class="course card">
+          <h3>Video Editing Basics</h3>
+          <p>
+            Description: Shot composition, basic editing workflow, transitions, titles, export for web. Students produce a 30–60s video by course end.
+          </p>
+          <ul>
+            <li>Duration: 3–4 lessons</li>
+            <li>Outcome: Polished short video + export presets</li>
+            <li>Skills: storyboarding, trimming, layering audio</li>
+          </ul>
+          <div class="course-footer">
+            <button class="btn ghost" onclick="openCourseModal('Video Editing')">View Syllabus</button>
+            <button class="btn primary" onclick="enroll('Video Editing')">Register Students</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ====== PROJECTS & FILTER ====== -->
+    <section id="projects" class="container section fade-up">
+      <div class="section-head">
+        <h2>Projects & Student Work</h2>
+        <div class="project-filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="video">Video</button>
+          <button class="filter" data-filter="admin">Admin Tools</button>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project card" data-type="web">
+          <img src="images/project-web-1.jpg" alt="Student mini site" />
+          <div class="project-meta">
+            <h4>Mini School Website</h4>
+            <p>Students built a 4-page site: Home, About, Gallery, Contact — includes responsive layout and simple JS interaction.</p>
+          </div>
+        </div>
+
+        <div class="project card" data-type="admin">
+          <img src="images/project-admin.jpg" alt="Student database" />
+          <div class="project-meta">
+            <h4>Student Database System</h4>
+            <p>Designed spreadsheet-powered student record system for ID printing and admin workflows during SIWES.</p>
+          </div>
+        </div>
+
+        <div class="project card" data-type="video">
+          <img src="images/project-video.jpg" alt="Student documentary" />
+          <div class="project-meta">
+            <h4>Short Documentary</h4>
+            <p>A 45s video made from concept to edit by students. Focused on storytelling and editing workflow.</p>
+          </div>
+        </div>
+
+        <div class="project card" data-type="web">
+          <img src="images/project-web-2.jpg" alt="Responsive layout project" />
+          <div class="project-meta">
+            <h4>Responsive Layout Exercise</h4>
+            <p>Students converted a mobile-first mockup into a responsive site using flexbox and CSS grid basics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== EXPERIENCE (column) ====== -->
+    <section id="experience" class="container section fade-up">
+      <h2>Experience & CV</h2>
+      <div class="experience-grid">
+        <!-- Left: detailed timeline / roles (long content) -->
+        <div class="experience-col">
+          <article class="exp card">
+            <h3>Landmark ICT Services — Cisco Instructor & Digital Skills Trainer</h3>
+            <p class="muted">Grace School (Gbagada) • Cedars School (Surulere) • Command School (Bonny Cantonment) — Ongoing</p>
+            <ul>
+              <li>Designed and delivered project-based lessons in HTML, Digital Awareness, and Video Editing across three schools.</li>
+              <li>Registered and onboarded <strong>150+ students</strong> into Cisco Networking Academy; handled account creation, course assignment, and progress tracking.</li>
+              <li>Coached students to complete modules, navigate assessments, build portfolio projects, and prepare for entry-level tech opportunities.</li>
+              <li>Collaborated with school staff to integrate ICT into school programs and streamline digital workflows.</li>
+            </ul>
+          </article>
+
+          <article class="exp card">
+            <h3>SIWES — Digital World Tech Academy</h3>
+            <p class="muted">Intern / Teaching Assistant</p>
+            <ul>
+              <li>Taught ICT fundamentals to students, assisted in practical sessions and project work.</li>
+              <li>Built and maintained student databases, produced ID card printing workflows, and supported WordPress tasks.</li>
+              <li>Gained hands-on experience with classroom IT support and administrative automation.</li>
+            </ul>
+          </article>
+
+          <article class="exp card">
+            <h3>Freelance Web Projects</h3>
+            <p class="muted">Personal & small-business projects</p>
+            <ul>
+              <li>Built simple brochure and portfolio websites using HTML/CSS and WordPress.</li>
+              <li>Provided site maintenance, content updates, and basic SEO tweaks for small clients.</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Right: concise summary / skills / education -->
+        <aside class="experience-side card">
+          <div class="side-block">
+            <h4>Skills</h4>
+            <ul class="skill-list">
+              <li>HTML & CSS (responsive)</li>
+              <li>Intro JavaScript</li>
+              <li>Cisco NetAcad (onboarding & admin)</li>
+              <li>Video editing workflows</li>
+              <li>WordPress basics</li>
+              <li>Google Suite & MS Office</li>
+            </ul>
+          </div>
+
+          <div class="side-block">
+            <h4>Education</h4>
+            <p>ND Computer Science — Yaba College of Technology (In Progress)</p>
+          </div>
+
+          <div class="side-block">
+            <h4>Contact</h4>
+            <p>Email: <em>Isholadarasimi552@gmail.com</em></p>
+            <p>Phone/WhatsApp: <em>+234 912 8591 655</em></p>
+          </div>
+
+          <div class="side-block">
+            <h4>Quick wins</h4>
+            <ul>
+              <li>150+ students onboarded</li>
+              <li>3 schools actively taught</li>
+              <li>Project-based curriculum</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ====== GALLERY & TESTIMONIALS ====== -->
+    <section id="gallery" class="container section fade-up">
+      <h2>Gallery</h2>
+      <p class="section-lead">Snapshots from lessons, workshops, and student showcases.</p>
+      <div class="gallery-grid">
+        <img src="images/gallery1.jpg" alt="gallery image" />
+        <img src="images/gallery2.jpg" alt="gallery image" />
+        <img src="images/gallery3.jpg" alt="gallery image" />
+        <img src="images/gallery4.jpg" alt="gallery image" />
+      </div>
+    </section>
+
+    <section id="testimonials" class="container section fade-up">
+      <h2>Testimonials</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial card">
+          <p>“Mr. Ishola made HTML easy and practical — our class built a real site in just a few lessons.”</p>
+          <p class="muted">— Teacher, Grace School</p>
+        </div>
+        <div class="testimonial card">
+          <p>“Students are more confident after the NetAcad onboarding. He handled registration fast and clearly.”</p>
+          <p class="muted">— School Admin, Cedars School</p>
+        </div>
+        <div class="testimonial card">
+          <p>“Practical and patient — exactly what our students needed.”</p>
+          <p class="muted">— Command School Teacher</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== BLOG SNIPPETS (optional) ====== -->
+    <section id="blog" class="container section fade-up">
+      <h2>Resources & Blog</h2>
+      <div class="blog-grid">
+        <article class="card">
+          <h3>How to register for Cisco Networking Academy (step-by-step)</h3>
+          <p>Practical guide for teachers and students. Includes screenshots, account tips, and common gotchas.</p>
+        </article>
+        <article class="card">
+          <h3>5 HTML mistakes beginners make (and how to fix them)</h3>
+          <p>Short, actionable fixes for common layout issues and accessibility errors.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ====== CONTACT (form) ====== -->
+    <section id="contact" class="container section fade-up">
+      <h2>Contact & Bookings</h2>
+      <p class="section-lead">Tell me your school name, number of students, preferred course/date and I’ll handle registration and logistics.</p>
+
+      <form class="contact-form card" onsubmit="return sendMessage(event)">
+        <label>
+          Your name
+          <input id="name" type="text" required placeholder="Full name" />
+        </label>
+        <label>
+          Email
+          <input id="email" type="email" required placeholder="you@example.com" />
+        </label>
+        <label>
+          School / Organization
+          <input id="school" type="text" placeholder="School name (optional)" />
+        </label>
+        <label>
+          Message
+          <textarea id="msg" required placeholder="Number of students, preferred course, etc."></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button class="btn ghost" type="button" onclick="prefillMessage()">Quick sample message</button>
+          <button class="btn primary" type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>© <span id="year"></span> Ishola Darasimi Emmanuel</div>
+        <div class="footer-links">
+          <a href="#privacy">Privacy</a> · <a href="#terms">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Link to external JS -->
+  <script src="script.js"></script>
+</body>
+</html>
